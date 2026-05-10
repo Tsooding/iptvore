@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="iptvore - Free IPTV streaming service. Watch free movies, TV shows, live TV, and premium streaming content. Free IPTV trial available. Stream HD movies and TV series online.">
+<meta name="keywords" content="free iptv, iptv free, iptv free trial, free movies, hd today, tv shows, tv series, live tv, premium streaming service, free tv, free television, streaming now, free trial, streaming tv, live tv stream, free streaming, iptv service, streaming service free, movies channels, all streaming">
+<meta property="og:title" content="iptvore - Free IPTV Streaming Service">
+<meta property="og:description" content="Watch free movies, TV shows, and live TV with iptvore. 7-day free trial, no credit card required.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://iptvore.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iptvore - Free IPTV Streaming">
+<meta name="twitter:description" content="Stream free movies, TV shows, and live TV with iptvore">
+<link rel="canonical" href="https://iptvore.com/index.html">
+<title>iptvore — Free IPTV Streaming Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">ipt<span>vore</span></div>
+  <ul class="nav-links">
+    <li><a href="#channels">Channels</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#devices">Devices</a></li>
+  </ul>
+  <button class="nav-cta">Start Free Trial</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span>Live Now — 20,000+ Channels</div>
+    <h1>STREAM<br><span class="accent">ANYTHING.</span><br><span class="thin">ANYWHERE.</span></h1>
+    <p>The world's most powerful free IPTV platform. Instant access to live TV, movies, TV shows, TV series, and premium streaming content from every corner of the globe — in stunning 4K quality. Enjoy free streaming with our free IPTV trial today.</p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary">Start Watching — Free Trial</a>
+      <a href="#features" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        See How It Works
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">20<span>K</span></div>
+        <div class="stat-label">Live Channels</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">80<span>K</span></div>
+        <div class="stat-label">VOD Titles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4<span>K</span></div>
+        <div class="stat-label">Ultra HD</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">99<span>%</span></div>
+        <div class="stat-label">Uptime</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fake TV Screens -->
+  <div class="hero-screens">
+    <div class="screen screen-sm">
+      <div class="screen-inner">
+        <div class="screen-bar">
+          <div class="screen-dot d1"></div>
+          <div class="screen-dot d2"></div>
+          <div class="screen-dot d3"></div>
+        </div>
+        <div class="screen-thumb" style="background: linear-gradient(145deg,#0c0f1f,#1a0a15);">
+          <div class="card-play" style="opacity:1;"><div class="arr"></div></div>
+          <div class="fake-content">
+            <div class="fake-title">Premier League</div>
+            <div class="fake-sub">Live · HD</div>
+            <div class="fake-bar"><div class="fake-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen screen-main">
+      <div class="screen-inner">
+        <div class="screen-bar">
+          <div class="screen-dot d1"></div>
+          <div class="screen-dot d2"></div>
+          <div class="screen-dot d3"></div>
+        </div>
+        <div class="screen-thumb" style="background: linear-gradient(145deg,#100c1f,#0c1420);">
+          <div class="card-play" style="opacity:1;"><div class="arr"></div></div>
+          <div class="fake-content">
+            <div class="fake-title">The Dark Knight — 4K HDR</div>
+            <div class="fake-sub">Action · 2h32m</div>
+            <div class="fake-bar"><div class="fake-bar-fill" style="width:62%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAROUSEL -->
+<section class="carousel-section" id="channels">
+  <div class="section-label">On Demand</div>
+  <h2 class="section-title">Free Movies & TV Shows Streaming Now</h2>
+  <p class="section-sub">Thousands of free TV series and movies across every genre. New content added daily. Stream HD today with our premium streaming service.</p>
+
+  <div class="carousel-track-wrap">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Cards generated by JS -->
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button class="ctrl-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+    <button class="ctrl-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+  </div>
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+<!-- TICKER -->
+<section class="ticker-section" id="liveChannels">
+  <div class="ticker-wrap" id="ticker"></div>
+</section>
+
+<!-- FEATURES -->
+<section class="features fade-in" id="features">
+  <div class="section-label">Why iptvore</div>
+  <h2 class="section-title">Best Free IPTV & Premium Streaming Service</h2>
+  <p class="section-sub">No buffering, no compromises. Free streaming with HD quality. Watch free television and live TV at your fingertips.</p>
+  <div class="features-grid">
+    <div class="feat-card fade-in">
+      <div class="feat-icon">📡</div>
+      <div class="feat-title">Anti-Buffer Technology</div>
+      <div class="feat-desc">Our adaptive bitrate engine pre-loads streams before you even click. Zero interruptions guaranteed, even on slower connections.</div>
+    </div>
+    <div class="feat-card fade-in">
+      <div class="feat-icon">🌍</div>
+      <div class="feat-title">Global Content Library</div>
+      <div class="feat-desc">190+ countries, 40+ languages. From US networks to Bollywood, European football to anime — we have it all.</div>
+    </div>
+    <div class="feat-card fade-in">
+      <div class="feat-icon">4K</div>
+      <div class="feat-title">Ultra HD & HDR10+</div>
+      <div class="feat-desc">Experience content as it was meant to be seen. Automatic quality adjustment based on your connection speed.</div>
+    </div>
+    <div class="feat-card fade-in">
+      <div class="feat-icon">📺</div>
+      <div class="feat-title">Multi-Screen Support</div>
+      <div class="feat-desc">Watch on up to 5 devices simultaneously. TV, phone, tablet, laptop — your entertainment travels with you.</div>
+    </div>
+    <div class="feat-card fade-in">
+      <div class="feat-icon">⏱️</div>
+      <div class="feat-title">Catch-Up TV</div>
+      <div class="feat-desc">Missed something? Rewind live TV up to 7 days back. Never miss a match, episode, or breaking news story again.</div>
+    </div>
+    <div class="feat-card fade-in">
+      <div class="feat-icon">🔒</div>
+      <div class="feat-title">Private & Secure</div>
+      <div class="feat-desc">Military-grade encryption. No logs, no tracking, no throttling. Your viewing habits are yours alone.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing fade-in" id="pricing">
+  <div class="section-label">Simple Pricing</div>
+  <h2 class="section-title">Free IPTV Trial & Premium Plans</h2>
+  <p class="section-sub">Start your free trial today. No contracts. Cancel anytime. All plans include a 7-day free IPTV trial to stream movies and TV shows.</p>
+  <div class="pricing-grid">
+    <div class="plan-card fade-in">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price"><sup>$</sup>9</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 5,000 Channels</li>
+        <li><span class="check">✓</span> Full HD Quality</li>
+        <li><span class="check">✓</span> 1 Screen</li>
+        <li><span class="check">✓</span> 30,000 VOD</li>
+        <li><span class="check">✓</span> 24/7 Support</li>
+      </ul>
+      <button class="plan-btn outline">Get Started</button>
+    </div>
+    <div class="plan-card featured fade-in">
+      <div class="plan-tag">Most Popular</div>
+      <div class="plan-name">Pro</div>
+      <div class="plan-price"><sup>$</sup>15</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 20,000 Channels</li>
+        <li><span class="check">✓</span> 4K Ultra HD</li>
+        <li><span class="check">✓</span> 3 Screens</li>
+        <li><span class="check">✓</span> 80,000 VOD</li>
+        <li><span class="check">✓</span> Catch-Up 7 Days</li>
+      </ul>
+      <button class="plan-btn solid">Start Free Trial</button>
+    </div>
+    <div class="plan-card fade-in">
+      <div class="plan-name">Family</div>
+      <div class="plan-price"><sup>$</sup>22</div>
+      <div class="plan-period">per month</div>
+      <ul class="plan-features">
+        <li><span class="check">✓</span> 20,000+ Channels</li>
+        <li><span class="check">✓</span> 4K + HDR10+</li>
+        <li><span class="check">✓</span> 5 Screens</li>
+        <li><span class="check">✓</span> All VOD Titles</li>
+        <li><span class="check">✓</span> Parental Controls</li>
+      </ul>
+      <button class="plan-btn outline">Get Started</button>
+    </div>
+  </div>
+</section>
+
+<!-- DEVICES -->
+<section class="devices fade-in" id="devices">
+  <div class="section-label">Compatible With</div>
+  <h2 class="section-title">Stream Free IPTV on Any Device</h2>
+  <p class="section-sub">One free IPTV subscription, every screen in your life. Watch live TV and free movies seamlessly across all devices.</p>
+  <div class="devices-row">
+    <div class="device-item"><span class="device-icon">📺</span><div class="device-name">Smart TV</div><div class="device-sub">Samsung, LG, Sony</div></div>
+    <div class="device-item"><span class="device-icon">📱</span><div class="device-name">iOS & Android</div><div class="device-sub">Phone & Tablet</div></div>
+    <div class="device-item"><span class="device-icon">💻</span><div class="device-name">Web Browser</div><div class="device-sub">Chrome, Safari, FF</div></div>
+    <div class="device-item"><span class="device-icon">🎮</span><div class="device-name">Gaming Console</div><div class="device-sub">PS5, Xbox</div></div>
+    <div class="device-item"><span class="device-icon">📦</span><div class="device-name">Amazon Fire TV</div><div class="device-sub">All Generations</div></div>
+    <div class="device-item"><span class="device-icon">🍎</span><div class="device-name">Apple TV</div><div class="device-sub">4K & HD</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials fade-in" id="testimonials">
+  <div class="section-label">What Users Say</div>
+  <h2 class="section-title">Loved by Millions</h2>
+  <p class="section-sub">Join millions of satisfied iptvore users worldwide.</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"iptvore is a game-changer! The picture quality is crystal clear and I've never experienced buffering. Highly recommended!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JM</div>
+        <div class="author-info">
+          <div class="author-name">James Mitchell</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"Finally found a service with all the channels I need. The multi-screen support is perfect for my family. Worth every penny!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SR</div>
+        <div class="author-info">
+          <div class="author-name">Sarah Rodriguez</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"The 4K quality is unbelievable. I've tried other services but iptvore is by far the best. Customer support is amazing too!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">MK</div>
+        <div class="author-info">
+          <div class="author-name">Michael Khan</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"Works seamlessly across all my devices. The catch-up TV feature saved me from missing my favorite shows. Absolutely love it!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">EC</div>
+        <div class="author-info">
+          <div class="author-name">Emma Chen</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"Best streaming service I've used. The interface is intuitive, the content is vast, and the price is unbeatable!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">DP</div>
+        <div class="author-info">
+          <div class="author-name">David Park</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"No buffering, no lag, just pure entertainment. iptvore has completely replaced my cable subscription!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">LJ</div>
+        <div class="author-info">
+          <div class="author-name">Lisa Johnson</div>
+          <div class="author-role">Verified User</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner fade-in">
+  <div class="cta-inner">
+    <h2>READY TO STREAM<br>FREE MOVIES & LIVE TV?</h2>
+    <p>Join millions of users streaming free IPTV worldwide. Start your free trial today. No credit card required for your 7-day free IPTV trial.</p>
+    <div class="cta-actions">
+      <a href="#pricing" class="btn-primary">Start Free Trial Now</a>
+      <a href="#features" class="btn-ghost">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section fade-in">
+  <div class="newsletter-container">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to get the latest news, updates, and exclusive offers</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-section fade-in" id="faq">
+  <div class="faq-container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-simple">
+      <div class="faq-item-simple">
+        <h3>What is iptvore?</h3>
+        <p>iptvore is a premium IPTV streaming service that delivers live TV channels, movies, and TV shows over the internet. With 20,000+ channels and 80,000+ titles, you get instant access to entertainment from around the world with a 7-day free trial.</p>
+      </div>
+
+      <div class="faq-item-simple">
+        <h3>What is IPTV and how does it work?</h3>
+        <p>IPTV (Internet Protocol Television) delivers television content over the internet instead of traditional satellite or cable. iptvore uses this technology to stream live channels and on-demand content directly to your device with an internet connection.</p>
+      </div>
+
+      <div class="faq-item-simple">
+        <h3>Is using iptvore legal?</h3>
+        <p>Yes, iptvore is a legal streaming service. We have proper licensing agreements for all content. Please review our Terms of Service for more details.</p>
+      </div>
+
+      <div class="faq-item-simple">
+        <h3>Can I use my subscription on multiple devices?</h3>
+        <p>Yes! Depending on your plan, you can watch on 1-5 devices simultaneously. The Starter plan allows 1 screen, Pro allows 3 screens, and Family allows 5 screens.</p>
+      </div>
+
+      <div class="faq-item-simple">
+        <h3>What is your refund policy?</h3>
+        <p>We offer a 30-day money-back guarantee. If you're not satisfied within 30 days of your first paid subscription, we'll refund your money. See our Refund Policy for details.</p>
+      </div>
+    </div>
+
+    <div class="faq-view-all">
+      <a href="faq.html" class="btn-primary">View All Questions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="footer-logo">ipt<span>vore</span></div>
+      <p class="footer-desc">The world's best free IPTV streaming service with 20,000+ channels and premium content.</p>
+      <div class="social-links-footer">
+        <a href="#" title="Facebook" aria-label="Facebook">f</a>
+        <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
+        <a href="#" title="Instagram" aria-label="Instagram">📷</a>
+        <a href="#" title="YouTube" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="installation.html">Installation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="refund-policy.html">Refund Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">Help Center</a></li>
+        <li>Email: support@iptvore.com</li>
+        <li>Phone: +1 (800) STREAM-1</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 iptvore. All rights reserved.</div>
+    <div class="trust-badges">
+      <span>🔒 Secure</span>
+      <span>✓ 30-Day Money Back</span>
+      <span>⭐ 99% Uptime</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

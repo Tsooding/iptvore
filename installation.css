@@ -1,0 +1,419 @@
+/* ─── INSTALLATION HERO ─────────────────────────────── */
+.install-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 6rem 4rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--dark2) 0%, var(--dark3) 100%);
+  border-bottom: 1px solid var(--glass-border);
+  margin-top: 80px;
+}
+
+.install-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(229, 23, 58, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.install-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+}
+
+.install-hero-content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.install-hero-content p {
+  font-size: 1.2rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ─── INSTALLATION SECTION ──────────────────────────── */
+.installation-section {
+  padding: 5rem 0;
+  background: var(--dark);
+}
+
+.install-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+
+/* ─── TABS NAVIGATION ───────────────────────────────── */
+.tabs-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--muted);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  border-color: var(--red);
+  color: var(--text);
+}
+
+.tab-btn.active {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+/* ─── TAB CONTENT ───────────────────────────────────── */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+/* ─── STEPS ─────────────────────────────────────────── */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  transition: all 0.3s;
+}
+
+.step:hover {
+  border-color: rgba(229, 23, 58, 0.3);
+  background: rgba(229, 23, 58, 0.05);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.step-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.step-content p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ─── TIPS BOX ──────────────────────────────────────── */
+.tips-box {
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 197, 24, 0.3);
+  background: rgba(245, 197, 24, 0.08);
+  margin-top: 2rem;
+}
+
+.tips-box h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.tips-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tips-box li {
+  font-size: 0.95rem;
+  color: var(--muted);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.tips-box li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ─── INSTALL TABS (MOBILE) ─────────────────────────── */
+.install-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.install-tab-btn {
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--muted);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.install-tab-btn:hover {
+  border-color: var(--red);
+  color: var(--text);
+}
+
+.install-tab-btn.active {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.install-tab-content {
+  display: none;
+}
+
+.install-tab-content.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.install-tab-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+/* ─── SUPPORT SECTION ───────────────────────────────── */
+.support-section {
+  padding: 7rem 6rem;
+  background: var(--dark2);
+  border-top: 1px solid var(--glass-border);
+}
+
+.support-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.support-container h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.support-container > p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 3rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.support-card {
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  transition: all 0.3s;
+}
+
+.support-card:hover {
+  border-color: rgba(229, 23, 58, 0.3);
+  transform: translateY(-4px);
+}
+
+.support-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.support-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.support-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+/* ─── RESPONSIVE ────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .install-hero {
+    padding: 6rem 3rem 3rem;
+  }
+
+  .install-container {
+    padding: 0 3rem;
+  }
+
+  .tabs-nav {
+    gap: 0.75rem;
+  }
+
+  .tab-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .step {
+    gap: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  .support-section {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .install-hero {
+    padding: 5rem 1.5rem 2rem;
+  }
+
+  .install-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .install-hero-content p {
+    font-size: 1rem;
+  }
+
+  .install-container {
+    padding: 0 1.5rem;
+  }
+
+  .tabs-nav {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .tab-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .step {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .install-tabs {
+    flex-direction: column;
+  }
+
+  .install-tab-btn {
+    width: 100%;
+  }
+
+  .support-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}
